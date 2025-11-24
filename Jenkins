@@ -4,19 +4,19 @@ pipeline {
        stage('Build') {
            steps {
                // Compile code and save artifacts
-               echeo 'Building Example'
+               echo 'Building Example'
            }
        }
        stage('Test') {
            steps {
                // Run tests and validate
-               echeo 'Testing Example'
+               echo 'Testing Example'
            }
        }
        stage('Deploy') {
            steps {
                // Deploy to production
-               echeo 'Deploying Example'
+               echo 'Deploying Example'
            }
        }
    }
