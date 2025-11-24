@@ -1,0 +1,20 @@
+pipeline {
+   agent any
+   stages {
+       stage('Build Example') {
+           steps {
+               // Compile code and save artifacts
+           }
+       }
+       stage('Test Example') {
+           steps {
+               // Run tests and validate
+           }
+       }
+       stage('Deploy Example') {
+           steps {
+               // Deploy to production
+           }
+       }
+   }
+}
