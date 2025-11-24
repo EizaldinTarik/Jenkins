@@ -1,19 +1,22 @@
 pipeline {
    agent any
    stages {
-       stage('Build Example') {
+       stage('Build') {
            steps {
                // Compile code and save artifacts
+               echeo 'Building Example'
            }
        }
-       stage('Test Example') {
+       stage('Test') {
            steps {
                // Run tests and validate
+               echeo 'Testing Example'
            }
        }
-       stage('Deploy Example') {
+       stage('Deploy') {
            steps {
                // Deploy to production
+               echeo 'Deploying Example'
            }
        }
    }
